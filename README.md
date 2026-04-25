@@ -243,7 +243,7 @@ The final answer for this use case should be:
 
 ```text
 720
-
+```
 Because:
 
 ```text
