@@ -183,16 +183,16 @@ PythonREPLTool()
 ```
 
 ### 8. Define the prompt
-A structured prompt is used to guide the agent on:
+A structured prompt tells the agent:
 
-- how to reason
-- how to format actions
-- how to call tools
-- when to stop and return the final answer
+- how to think,
+- how to format actions,
+- how to call tools,
+- when to return a final answer.
 
-The prompt follows a ReAct-style pattern based on:
+This prompt uses a **ReAct-style** pattern:
 
-- Thought
-- Action
-- Action Input
-- Final Answer
+- **Thought**
+- **Action**
+- **Action Input**
+- **Final Answer**
