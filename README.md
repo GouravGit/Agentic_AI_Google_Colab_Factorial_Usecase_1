@@ -180,3 +180,19 @@ The agent is given access to:
 
 ```python
 PythonREPLTool()
+```
+
+### 8. Define the prompt
+A structured prompt is used to guide the agent on:
+
+- how to reason
+- how to format actions
+- how to call tools
+- when to stop and return the final answer
+
+The prompt follows a ReAct-style pattern based on:
+
+- Thought
+- Action
+- Action Input
+- Final Answer
