@@ -97,3 +97,18 @@ Run Python Tool
 Observe Result
    ↓
 Final Answer
+
+This project follows a simple agent loop where the language model reasons about the task, decides whether a tool is needed, executes the tool if required, observes the result, and then returns the final answer.
+```
+### Agent Loop
+### High-Level Flow
+
+```mermaid
+flowchart TD
+    A[User Input] --> B[Prompt Template]
+    B --> C[LLM Reasoning]
+    C --> D{Need Python Tool?}
+    D -- Yes --> E[PythonREPLTool]
+    E --> F[Observation]
+    F --> C
+    D -- No --> G[Final Answer]
