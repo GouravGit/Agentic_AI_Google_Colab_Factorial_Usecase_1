@@ -174,3 +174,9 @@ These settings help make the model output more predictable and suitable for agen
 
 ### 6. Wrap the model for LangChain
 The Hugging Face pipeline is then wrapped in a LangChain-compatible LLM class so it can be used directly by the agent framework.
+
+### 7. Add a tool
+The agent is given access to:
+
+```python
+PythonREPLTool()
