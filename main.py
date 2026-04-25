@@ -148,3 +148,9 @@ result = agent_executor.invoke(
 )
 
 print(result["output"])
+
+result = agent_executor.invoke(
+    {"input": "Use Python to generate a random UUID and return it."}
+)
+
+print(result["output"])
